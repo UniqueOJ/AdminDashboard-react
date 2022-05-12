@@ -1,8 +1,8 @@
 import './widgetLg.css'
 
 export default function widgetLg() {
-  const Button = ({type}) =>{
-    return <button className='widgetLgButton + type'>{type}</button>
+  const Button = ({ type }) => {
+    return <button className={'widgetLgButton ' + type}>{type}</button>
   }
   return (
     <div className='widgetLg'>
@@ -14,55 +14,55 @@ export default function widgetLg() {
           <th className="widgetLgTh">Amount</th>
           <th className="widgetLgTh">Status</th>
         </tr>
-      <tr className="widgetLgTr">
-       <td className="widgetLgUser">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRfZi3BBT6uRAQDEJTV3mKo5wkvpO3q6NaSw&usqp=CAU" alt="" className="widgetLgImg" />
-       <span className="widgetLgName">Love Ufedo</span>
-       </td>
-       <td className="widgetLgDate">2 June 2021</td>
-       <td className="widgetLgAmount">$122.00</td>
-       <td className="widgetLgStatus"><Button type="Approved"/></td>
-       </tr>
+        <tr className="widgetLgTr">
+          <td className="widgetLgUser">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRfZi3BBT6uRAQDEJTV3mKo5wkvpO3q6NaSw&usqp=CAU" alt="" className="widgetLgImg" />
+            <span className="widgetLgName">Love Ufedo</span>
+          </td>
+          <td className="widgetLgDate">2 June 2021</td>
+          <td className="widgetLgAmount">$122.00</td>
+          <td className="widgetLgStatus"><Button type="Approved" /></td>
+        </tr>
 
-       <tr className="widgetLgTr">
-       <td className="widgetLgUser">
-         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRfZi3BBT6uRAQDEJTV3mKo5wkvpO3q6NaSw&usqp=CAU" alt="" className="widgetLgImg" />
-       <span className="widgetLgName">Love Ufedo</span>
-       </td>
-       <td className="widgetLgDate">2 June 2021</td>
-       <td className="widgetLgAmount">$122.00</td>
-       <td className="widgetLgStatus"><Button type="Declined"/></td>
-       </tr>
- 
-       <tr className="widgetLgTr">
-       <td className="widgetLgUser">
-         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRfZi3BBT6uRAQDEJTV3mKo5wkvpO3q6NaSw&usqp=CAU" alt="" className="widgetLgImg" />
-       <span className="widgetLgName">Love Ufedo</span>
-       </td>
-       <td className="widgetLgDate">2 June 2021</td>
-       <td className="widgetLgAmount">$122.00</td>
-       <td className="widgetLgStatus"><Button type="Pending"/></td>
-       </tr>
- 
-       <tr className="widgetLgTr">
-       <td className="widgetLgUser">
-         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRfZi3BBT6uRAQDEJTV3mKo5wkvpO3q6NaSw&usqp=CAU" alt="" className="widgetLgImg" />
-       <span className="widgetLgName">Love Ufedo</span>
-       </td>
-       <td className="widgetLgDate">2 June 2021</td>
-       <td className="widgetLgAmount">$122.00</td>
-       <td className="widgetLgStatus"><Button type="Approved"/></td>
-       </tr>
- 
-       <tr className="widgetLgTr">
-       <td className="widgetLgUser">
-         <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRfZi3BBT6uRAQDEJTV3mKo5wkvpO3q6NaSw&usqp=CAU" alt="" className="widgetLgImg" />
-       <span className="widgetLgName">Love Ufedo</span>
-       </td>
-       <td className="widgetLgDate">2 June 2021</td>
-       <td className="widgetLgAmount">$122.00</td>
-       <td className="widgetLgStatus"><Button type="Approved"/></td>
-       </tr>
+        <tr className="widgetLgTr">
+          <td className="widgetLgUser">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRfZi3BBT6uRAQDEJTV3mKo5wkvpO3q6NaSw&usqp=CAU" alt="" className="widgetLgImg" />
+            <span className="widgetLgName">Love Ufedo</span>
+          </td>
+          <td className="widgetLgDate">2 June 2021</td>
+          <td className="widgetLgAmount">$122.00</td>
+          <td className="widgetLgStatus"><Button type="Declined" /></td>
+        </tr>
+
+        <tr className="widgetLgTr">
+          <td className="widgetLgUser">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRfZi3BBT6uRAQDEJTV3mKo5wkvpO3q6NaSw&usqp=CAU" alt="" className="widgetLgImg" />
+            <span className="widgetLgName">Love Ufedo</span>
+          </td>
+          <td className="widgetLgDate">2 June 2021</td>
+          <td className="widgetLgAmount">$122.00</td>
+          <td className="widgetLgStatus"><Button type="Pending" /></td>
+        </tr>
+
+        <tr className="widgetLgTr">
+          <td className="widgetLgUser">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRfZi3BBT6uRAQDEJTV3mKo5wkvpO3q6NaSw&usqp=CAU" alt="" className="widgetLgImg" />
+            <span className="widgetLgName">Love Ufedo</span>
+          </td>
+          <td className="widgetLgDate">2 June 2021</td>
+          <td className="widgetLgAmount">$122.00</td>
+          <td className="widgetLgStatus"><Button type="Approved" /></td>
+        </tr>
+
+        <tr className="widgetLgTr">
+          <td className="widgetLgUser">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRfZi3BBT6uRAQDEJTV3mKo5wkvpO3q6NaSw&usqp=CAU" alt="" className="widgetLgImg" />
+            <span className="widgetLgName">Love Ufedo</span>
+          </td>
+          <td className="widgetLgDate">2 June 2021</td>
+          <td className="widgetLgAmount">$122.00</td>
+          <td className="widgetLgStatus"><Button type="Approved" /></td>
+        </tr>
       </table>
     </div>
   )
