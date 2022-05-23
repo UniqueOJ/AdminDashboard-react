@@ -11,6 +11,7 @@ import DynamicFeedOutlinedIcon from '@mui/icons-material/DynamicFeedOutlined';
 import ChatBubbleOutlineOutlinedIcon from '@mui/icons-material/ChatBubbleOutlineOutlined';
 import WorkOutlineOutlinedIcon from '@mui/icons-material/WorkOutlineOutlined';
 import ReportIcon from '@mui/icons-material/Report';
+import {Link} from "react-router-dom";
 
 export default function Sidebar() {
   return (
@@ -39,18 +40,26 @@ export default function Sidebar() {
         <div className="sidebarMenu">
           <h3 className="sidebarTitle">Quick Menu</h3>
           <ul className="sidebarList">
+
+            <Link to= '/users' className="link">
           <li className="sidebarListItem">
           <PersonOutlineIcon/>
            Users
           </li>
+          </Link>
+
+           <Link to='/products' className="link">
           <li className="sidebarListItem">
           <Inventory2OutlinedIcon/>
            Products
           </li>
+          </Link>
+
           <li className="sidebarListItem">
           <AttachMoneyOutlinedIcon/>
            Transactions
           </li>
+
           <li className="sidebarListItem">
           <BarChartOutlinedIcon/>
            Reports
