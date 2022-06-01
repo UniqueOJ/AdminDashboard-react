@@ -1,16 +1,23 @@
 import "./userList.css";
-import {DataGrid, GridColDef} from '@mui/x-data-grid';
+import {DataGrid} from '@mui/x-data-grid';
 import DeleteOutlineIcon from '@mui/icons-material/DeleteOutline';
 import {userRows} from "../../dummyData";
 import {Link} from 'react-router-dom';
+import {useState} from 'react';
 
 export default function UserList() {
-  const columns: GridColDef[] = [
+  const [data, setData] = useState(userRows);
+
+  const handleDelete = (id) => {
+    setData(data.filter((item) => item.id !== id))
+  };
+
+  const columns = [
     { field: 'id', headerName: 'ID', width: 90 },
     { field: 'user', headerName: 'User', width: 200,  renderCell: (params)=> {
       return (
         <div className="userListUser">
-          <img className="userListImg" src={params.row.avater} alt="" />
+          <img className="userListImg" src={params.row.avater} alt=""/>
           {params.row.username}
         </div>
       ) } },

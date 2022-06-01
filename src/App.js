@@ -8,6 +8,7 @@ import User from "./pages/user/User";
 import NewUser from "./pages/newUser/NewUser";
 import ProductList from "./pages/productList/ProductList";
 
+
 function App() {
   return (
     <Router>
@@ -20,6 +21,7 @@ function App() {
         <Route path="/User/:userId" element={<User/>}></Route>
         <Route path="/newUser" element={<NewUser/>}></Route>
         <Route path="/products" element={<ProductList/>}></Route>
+        
         {/* <Route path="/product/:productId" element={<Product/>}></Route>
         <Route path="/newproduct" element={<NewProduct/>}></Route> */}
      </Routes>
