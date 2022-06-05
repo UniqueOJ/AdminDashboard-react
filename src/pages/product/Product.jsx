@@ -2,6 +2,7 @@ import './product.css';
 import {Link} from "react-router-dom";
 import Chart from '../../components/charts/Chart';
 import { productData } from '../../dummyData';
+import PublishIcon from '@mui/icons-material/Publish';
 
 export default function Product() {
   return (
@@ -21,7 +22,7 @@ export default function Product() {
                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuZxhtbigwluBrWt0-jKGLghgLaLcmLBmi0g&usqp=CAU" alt="" className="productInfoImg" />
                 <span className="productName">Apple Airpods</span>
              </div>
-             <div className="productInfoButtom">
+             <div className="productInfoBottom">
                <div className="productInfoItem">
                  <span className="productInfoKey">id:</span>
                  <span className="productInfoValue">123</span>
@@ -50,7 +51,35 @@ export default function Product() {
              </div>
          </div>
      </div>
-     <div className="productBottom"></div>
+     <div className="productBottom">
+       <form className="productForm">
+         <div className="productFormLeft">
+           <label>Product Name</label>
+           <input type="text" placeholder='Apple Airpod'/>
+           <label>In Stock</label>
+           <select name="InStock" id="InStock">
+             <option value="yes">Yes</option>
+             <option value="no">No</option>
+           </select>
+
+           <label>Active</label>
+           <select name="active" id="active">
+             <option value="yes">Yes</option>
+             <option value="no">No</option>
+           </select>
+         </div>
+         <div className="productFormRight">
+           <div className="productUpload">
+             <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTuZxhtbigwluBrWt0-jKGLghgLaLcmLBmi0g&usqp=CAU" alt="" className="productUploadImg" />
+           <label for="file">
+             <PublishIcon/>
+           </label>
+           <input type="file" id='file' style={{display: "none"}} />
+           </div>
+           <button className="productButton">Update</button>
+         </div>
+       </form>
+     </div>
     </div>
   )
 }
